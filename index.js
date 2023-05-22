@@ -10,10 +10,10 @@ async function sendLoginNotification(user, ipAddress) {
 
   try {
     await axios.post('https://discord.com/api/webhooks/1105766891089309776/hVGVNiKeBFAInX61CJFXLkgKTLoDfuGkHA49ztNvgkZ1re7SDD8yIGHhF4q5FPAKhrxs', {
-      content: "Ezihealth Login performed",
+      content: " Login performed",
       embeds: [{
-        title: "Ezihealth Login!",
-        description: `${user.first_name} performed a login to Ezihealth at ${loginTime} with IP ${ipAddress}`,
+        title: " Login!",
+        description: `${user.first_name} performed a login to  at ${loginTime} with IP ${ipAddress}`,
         color: 15509901
       }]
     });
